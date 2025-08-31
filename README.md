@@ -32,8 +32,26 @@ src/main/java/br.com.exemplo.tarefas
 A API possui os seguintes endpoints:
 
 ### 🔹 Criar nova tarefa
-- **POST** `/tarefas`  
-- Corpo da requisição (JSON):  
+- **POST** `/tarefas`
+- Registra a tarefa
+
+### 🔹 Listar todas as tarefas
+- **GET** `/tarefas`
+- Retorna a lista de todas as tarefas cadastradas.
+
+### 🔹 Buscar tarefa por ID
+- **GET** `//tarefas/{id}`
+- Consulta a tarefa através do ID mencionado
+
+### 🔹 Atualizar tarefa
+- **PUT** `//tarefas/{id}`
+- Atualiza a tarefa com base no ID mencionado
+
+### 🔹 Deletar tarefa
+- **DELETE** `//tarefas/{id}`
+- Deleta a tarefa com base no ID mencionado
+
+- Corpo da requisição (JSON):
 ```json
 {
   "nome": "Nome da tarefa",
