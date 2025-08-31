@@ -36,63 +36,7 @@ A API possui os seguintes endpoints:
 - Corpo da requisição (JSON):  
 ```json
 {
-  "nome": "Desenvolvimento da API",
-  "responsavel": "Guilherme - RU123456",
+  "nome": "Nome da tarefa",
+  "responsavel": "Carlos",
   "dataEntrega": "2025-12-12"
 }
-
-🔹 Listar todas as tarefas
-
-GET /tarefas
-
-Retorna a lista de todas as tarefas cadastradas.
-
-🔹 Buscar tarefa por ID
-
-GET /tarefas/{id}
-
-Exemplo: /tarefas/1
-
-🔹 Atualizar tarefa
-
-PUT /tarefas/{id}
-
-Corpo da requisição (JSON):
-{
-  "nome": "Estudar Spring Boot",
-  "responsavel": "Millena",
-  "dataEntrega": "2025-09-05"
-}
-Deletar tarefa
-
-DELETE /tarefas/{id}
-
-Exemplo: /tarefas/1
-
-5. Testes Realizados no Postman
-
-Para validação do funcionamento da API, foram realizados testes no Postman, conforme solicitado:
-
-Inserção de 3 tarefas (incluindo a obrigatória: Desenvolvimento da API, responsável com nome + RU e data de entrega 12/12/2025).
-
-Verificação da listagem de todas as tarefas.
-
-Teste de consulta por ID.
-
-Atualização de uma tarefa existente.
-
-Exclusão de uma tarefa.
-
-📎 Os prints desses testes encontram-se anexados ao relatório.
-
-6. Considerações Finais
-
-O desenvolvimento deste projeto permitiu a aplicação prática de conceitos fundamentais de desenvolvimento backend, tais como:
-
-Criação de APIs RESTful com Spring Boot;
-
-Persistência de dados utilizando JPA e H2 Database;
-
-Consumo e testes de endpoints via Postman.
-
-A API atende aos requisitos solicitados, demonstrando as operações básicas de CRUD (Create, Read, Update, Delete) em tarefas, e pode ser expandida futuramente para contemplar autenticação, filtros e integração com bancos de dados externos.
